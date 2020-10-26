@@ -1,5 +1,6 @@
+import pygame
+from pygame import mixer
 from math import pi, sin, cos
-
 
 from direct.showbase.ShowBase import ShowBase
 from direct.task import Task
@@ -8,9 +9,13 @@ from direct.actor.Actor import Actor
 
 class WalkingPanda(ShowBase):
 
-    def __init__(self, no_rotate=False, no_panda=False, small_panda=False, giant_panda=False):
+    def __init__(self, no_rotate=False, no_panda=False, small_panda=False, giant_panda=False, no_sound=False):
         ShowBase.__init__(self)
-
+        if not no_sound:
+            pygame.mixer.pre_init(44100, 16, 2, 4096)
+            pygame.mixer.init()
+            mixer.music.load("background_sound.wav")
+            mixer.music.play(-1)
         # Load the environment model.
         self.scene = self.loader.loadModel("models/environment")
         # Reparent the model to render.

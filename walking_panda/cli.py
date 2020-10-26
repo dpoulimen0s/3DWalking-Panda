@@ -13,6 +13,8 @@ def cli():
                         action="store_true")
     parser.add_argument("--giant-panda", help="Giant Panda",
                         action="store_true")
+    parser.add_argument("--no-sound", help="Mute Mode",
+                        action="store_true")
     args = parser.parse_args()
 
     walking = panda.WalkingPanda(**vars(args))
