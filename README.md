@@ -29,6 +29,11 @@ For example : `python walking_panda.py --no-rotate` will make the rotating anima
 <br>
 For help about arguments type : `python walking_panda.py -h`
 
+## Built With
+
+* Pycharm IDE
+* Windows 10
+
 ## Authors
 
 * **Dimitris Poulimenos** - *Initial work* - [dpoulimen0s](https://github.com/dpoulimen0s)
