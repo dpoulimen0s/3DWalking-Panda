@@ -28,3 +28,12 @@ Remember that there are some arguments you can pass to the program in order to c
 For example : `python walking_panda.py --no-rotate` will make the rotating animation to stop.
 <br>
 For help about arguments type : `python walking_panda.py -h`
+
+## Authors
+
+* **Dimitris Poulimenos** - *Initial work* - [dpoulimen0s](https://github.com/dpoulimen0s)
+
+
+## License
+
+This project is licensed under the Newcastle University License - see the [LICENSE.md](https://github.com/dpoulimen0s/Walking-Panda-3D/blob/master/LICENSE.md) file for details
